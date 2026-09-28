@@ -7,12 +7,8 @@ import { AddComponent } from './components/addTask/add.component';
 import { ListTask } from './components/list-task/list-task';
 
 @NgModule({
-  declarations: [
-    App, 
-    AddComponent ,
-    ListTask
-  ],
-  imports: [BrowserModule, AppRoutingModule ],
+  declarations: [App, ListTask],
+  imports: [BrowserModule, AppRoutingModule, AddComponent],
   providers: [provideBrowserGlobalErrorListeners(), provideClientHydration()],
   bootstrap: [App],
 })
